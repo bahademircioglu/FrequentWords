@@ -13,16 +13,11 @@ Text of the tweet (last field)
 Stopwords
 A list of stopwords can be found here. These words should not be counted in the frequency analysis.
 
-Word Definition
 For simplicity, a word is defined as any contiguous block of alphabetic characters (letters from “a” to “z”, both upper and lower case) which includes at most one single quotation mark between these letters.
 
-Output
 After processing the file, the program must list the top 10 most frequent words in the tweets along with their counts. The total elapsed time for the operation should also be displayed.
 
 Sample output:
-
-php
-Copy code
 <word1>
 <word2>
 <word3>
@@ -39,7 +34,7 @@ Copy code
 <word count>
 <word count>
 Total Elapsed Time : X seconds
-Implementation Details
+
 The project consists of the following components:
 
 StopWatcher: For timing calculations, separating seconds and milliseconds.
@@ -51,17 +46,7 @@ WordsList: Performs most word operations like inserting, expanding the list, and
 WordTopList: Handles sorting of words using the merge sort algorithm.
 These components are organized in multiple C++ files with appropriate headers. A general header includes necessary libraries such as iostream, ctime, etc.
 
-Unicode Support
 The project supports Unicode to handle languages like Greek, Arabic, etc., using wmain and wchar.
 
-Project Structure
-StopWatcher.h and StopWatcher.cpp
-TextReader.h and TextReader.cpp
-Word.h and Word.cpp
-WordGenerator.h and WordGenerator.cpp
-WordHashList.h and WordHashList.cpp
-WordsList.h and WordsList.cpp
-WordTopList.h and WordTopList.cpp
-main.cpp
 Compilation and Execution
 To compile the project, use the provided Visual Studio project directory. Ensure all necessary configurations are in place and build the solution. Run the executable from the command line to see the output.
